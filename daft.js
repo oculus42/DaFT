@@ -113,7 +113,7 @@
      * foo.functions.unload()
      * @added 09-11-2014
      * @updated 09-11-2014
-     * @description Provides a method for ynloading modules
+     * @description Provides a method for unloading modules
      */
     
     this.unload = function(name){

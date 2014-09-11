@@ -2,7 +2,7 @@
   return {
     data : {},
     accessories : {},
-    function : {},
-    template : {}
+    functions : {},
+    templates : {}
   }
 })();

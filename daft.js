@@ -1,8 +1,22 @@
 (function(){
+  
+  var Data = function(){
+    return true;
+  },
+  Accessories = function(){
+    return true;
+  },
+  Functions = function(){
+    return true;
+  },
+  Templates = function(){
+    return true;
+  };
+  
   return {
-    data : {},
-    accessories : {},
-    functions : {},
-    templates : {}
+    data : Data,
+    accessories : Accessories,
+    functions : Functions,
+    templates : Templates
   }
 })();

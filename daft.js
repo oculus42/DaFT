@@ -16,7 +16,7 @@
     
     this.loaded = [];
     
-  }(),
+  },
   Accessories = function(){
       
     if (!(this instanceof Data)) {
@@ -33,7 +33,7 @@
     
     this.loaded = [];
       
-  }(),
+  },
   Functions = function(){
     if (!(this instanceof Data)) {
       return new Data();
@@ -48,7 +48,7 @@
     }
     
     this.loaded = [];
-  }(),
+  },
   
   Templates = function(){
     if (!(this instanceof Data)) {
@@ -64,12 +64,12 @@
     }
     
     this.loaded = [];
-  }();
+  };
   
   return {
-    data : Data,
-    accessories : Accessories,
-    functions : Functions,
-    templates : Templates
+    data : Data(),
+    accessories : Accessories(),
+    functions : Functions(),
+    templates : Templates()
   }
 })();

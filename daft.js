@@ -11,7 +11,7 @@
    * Data Model
    * @added 09-11-2014
    * @updated 09-11-2014
-   * @description Provides a model for intereacting with Data components.
+   * @description Provides a model for interacting with Data components.
    */
   
   var Data = function(){
@@ -35,7 +35,7 @@
      * foo.data.unload()
      * @added 09-11-2014
      * @updated 09-11-2014
-     * @description Provides a method for loading new modules
+     * @description Provides a method for unloading modules
      */
     
     this.unload = function(name){
@@ -50,13 +50,13 @@
    * Accessories Model
    * @added 09-11-2014
    * @updated 09-11-2014
-   * @description Provides a model for intereacting with Accessory components.
+   * @description Provides a model for interacting with Accessory components.
    */
    
   Accessories = function(){
       
-    if (!(this instanceof Data)) {
-      return new Data();
+    if (!(this instanceof Accessories)) {
+      return new Accessories();
     }
     
     /**
@@ -74,7 +74,7 @@
      * foo.accessories.unload()
      * @added 09-11-2014
      * @updated 09-11-2014
-     * @description Provides a method for loading new modules
+     * @description Provides a method for unloading modules
      */
     
     this.unload = function(name){
@@ -89,13 +89,13 @@
    * Functions Model
    * @added 09-11-2014
    * @updated 09-11-2014
-   * @description Provides a model for intereacting with Functional components.
+   * @description Provides a model for interacting with Functional components.
    */
    
   Functions = function(){
     
-    if (!(this instanceof Data)) {
-      return new Data();
+    if (!(this instanceof Functions)) {
+      return new Functions();
     }
 
     /**
@@ -113,7 +113,7 @@
      * foo.functions.unload()
      * @added 09-11-2014
      * @updated 09-11-2014
-     * @description Provides a method for loading new modules
+     * @description Provides a method for unloading modules
      */
     
     this.unload = function(name){
@@ -128,13 +128,13 @@
    * Templates Model
    * @added 09-11-2014
    * @updated 09-11-2014
-   * @description Provides a model for intereacting with Template components.
+   * @description Provides a model for interacting with Template components.
    */
    
   Templates = function(){
     
-    if (!(this instanceof Data)) {
-      return new Data();
+    if (!(this instanceof Templates)) {
+      return new Templates();
     }
     
     /**
@@ -152,7 +152,7 @@
      * foo.templates.unload()
      * @added 09-11-2014
      * @updated 09-11-2014
-     * @description Provides a method for loading new modules
+     * @description Provides a method for unloading modules
      */
     
     this.unload = function(name){
@@ -163,6 +163,7 @@
     
   };
   
+  // TODO: Expose DaFT interface
   return {
     data : Data(),
     accessories : Accessories(),
@@ -170,4 +171,4 @@
     templates : Templates()
   }
   
-})();
+}());
